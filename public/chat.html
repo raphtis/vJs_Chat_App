@@ -10,31 +10,24 @@
         crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>ChatCord App</title>
+    <title>VanillaChat App</title>
     <link rel="icon" type="img/jpg" href="/images/chat.png" />
 </head>
 <body>
     <div class="chat-container">
     <header class="chat-header">
-        <h1><i class="fas fa-inbox"></i> Vanilla Chat</h1>
+        <h1><i class="fas fa-inbox"></i> VanillaChat</h1>
         <a id="leave-btn" class="btn">Leave Room</a>
     </header>
     <main class="chat-main">
         <div class="chat-sidebar">
         <h3><i class="fas fa-comments"></i> Room Name:</h3>
-        <h2 id="room-name">JavaScript</h2>
+        <h2 id="room-name"></h2>
         <h3><i class="fas fa-users"></i> Users</h3>
-        <ul id="users">
-            <li>Anakin</li>
-            <li>Obi-Wan</li>
-            <li>Dooku</li>
-        </ul>
+        <ul id="users"></ul>
         </div>
         <div class="chat-messages">
-            <div class="message">
-                <p class="meta"> Anakin <span>9:12pm</span></p>
-                <p class="text"> I hate sand </p>
-            </div>
+            
         </div>
     </main>
     <div class="chat-form-container">
@@ -51,11 +44,7 @@
     </div>
     </div>
 
-    <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
-    integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
-    crossorigin="anonymous"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.2/qs.min.js" integrity="sha512-ErYZLDi4WRoox2JhOIADWBydTRhMJ0KIXnv5C1GvuY8YooLGapnebaM3iRGhwS6/E9ONXj0MRXp6bhu73sdFkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="js/main.js"></script>
 </body>
